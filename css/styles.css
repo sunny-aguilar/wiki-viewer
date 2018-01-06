@@ -1,0 +1,125 @@
+@import url("https://fonts.googleapis.com/css?family=Encode+Sans+Expanded|Oxygen");
+.container {
+  display: grid;
+  grid-gap: 10px;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  grid-auto-rows: auto; }
+
+.content {
+  grid-column: 1 / -1; }
+
+@media only screen and (min-width: 900px) {
+  .content {
+    margin: 0 100px 0 100px; } }
+
+.search-container {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  width: 500px;
+  font-family: 'Oxygen', sans-serif;
+  font-size: 1.4em;
+  color: #000; }
+
+.search-container-search {
+  margin: auto;
+  margin-bottom: 20px;
+  text-align: center;
+  max-width: 500px;
+  font-family: 'Oxygen', sans-serif;
+  font-size: 1.4em;
+  color: #000; }
+
+input {
+  height: 60px;
+  width: 300px;
+  padding-left: 4px;
+  margin-bottom: 15px;
+  font-size: 1.8rem;
+  border: none;
+  border-bottom: 3px #ffcc5c solid;
+  border-radius: 6px;
+  color: grey;
+  transition: width 0.4s ease-in-out;
+  text-align: center; }
+
+input:focus {
+  width: 100%;
+  outline: none; }
+
+.links:link, .links:hover, .links:visited, .links:active {
+  text-decoration: none;
+  color: #ffeead; }
+
+#random:link, #random:hover, #random:visited, #random:active {
+  text-decoration: none;
+  color: #ffeead;
+  padding: 10px 44px; }
+
+.container > div {
+  padding: 8px;
+  align-items: left;
+  font-size: 1em;
+  color: #ffeead; }
+
+.content {
+  padding: 8px; }
+
+html, body {
+  background-color: #ffeead;
+  margin: 10px;
+  font-family: 'Oxygen', sans-serif; }
+
+.container > div:nth-child(1n) {
+  background-color: #96ceb4; }
+
+.container > div:nth-child(3n) {
+  background-color: #88d8b0; }
+
+.container > div:nth-child(2n) {
+  background-color: #ff6f69; }
+
+.container > div:nth-child(4n) {
+  background-color: #ffcc5c; }
+
+h2 {
+  margin: 0 0 -12px 0; }
+
+i {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #ff6f69; }
+
+h3 {
+  position: fixed;
+  top: 60%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  font-size: 2em;
+  color: #96ceb4; }
+
+#clear {
+  text-align: center;
+  font-size: 1.5em;
+  color: #96ceb4; }
+
+button {
+  background-color: lightgreen;
+  color: #ffeead;
+  border-radius: 6px;
+  border: none;
+  height: 40px;
+  font-size: .8em; }
+
+button:hover {
+  background-color: #ffcc5c;
+  color: #ffeead;
+  border-radius: 6px;
+  border: none;
+  height: 40px;
+  font-size: .8em; }
